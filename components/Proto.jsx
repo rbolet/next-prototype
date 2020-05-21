@@ -13,11 +13,23 @@ export default function Proto(){
                 setData(response.bulldozer);
             })
     }
+
+const postDolphins = ()=>{
+    fetch('/api/hello', {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify({dolphins: 'so long and thanks for all the fish!'})
+    })
+}
+
     return (
         <div>
             <div>
                 <p>Component Mounted</p>
                 <button onClick={fetchNewData}>Yellow</button>
+                <button onClick ={postDolphins}>Dolphins</button>
             </div>
             <div>
                 {data}
