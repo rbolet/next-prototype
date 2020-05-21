@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Proto from '../components/Proto';
+
 
 export default function Home(props) {
   return (
@@ -16,7 +18,7 @@ export default function Home(props) {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
-        
+        <Proto/>
       </main>
 
       <footer>
